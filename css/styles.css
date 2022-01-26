@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif!important;
+	background-color: hsl(233, 47%, 7%);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 15px;
+}
+
+.header {
+	font-size: 2.5em;
+}
+
+.card {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+}
+
+.content {
+	padding: 65px;
+	width: 430px;
+}
+
+.paragraph {
+	line-height: 1.5em;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.violet-color {
+	color: hsl(277, 64%, 61%);
+}
+
+.stats {
+	display: flex;
+	margin-top: 50px;
+}
+
+.stats {
+	text-transform: uppercase;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.stat-title {
+	font-size: 1.7em;
+	font-weight: 700;
+}
+
+.stat-name {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.image {
+	position: relative;
+}
+.img {
+	width: 100%;
+	height: 100%;
+}
+.overlay {
+	opacity: .4;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	filter: brightness(20%) saturate(5);
+	background-color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (max-width: 850px) {
+	.card {
+		flex-direction: column-reverse;
+		padding: auto;
+	}
+	.content {
+		padding: 0;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+	.stats {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		margin-bottom: 30px;
+	}
+  }
